@@ -40,6 +40,7 @@ INSERT INTO mahasiswa VALUES(
 
 .header on
 .mode column
+
 SELECT * FROM mahasiswa;
 SELECT * FROM jurusan;
 SELECT * FROM dosen;
