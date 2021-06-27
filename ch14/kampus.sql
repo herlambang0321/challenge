@@ -38,6 +38,7 @@ INSERT INTO mahasiswa VALUES(
     '0734021634', 'Herlambang Gunawan', 'Bengkulu', '101'
 );
 
+
 .header on
 .mode column
 
