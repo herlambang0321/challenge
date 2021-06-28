@@ -9,7 +9,7 @@ INSERT INTO jurusan VALUES(
 
 CREATE TABLE dosen(
     nip VARCHAR(20) PRIMARY KEY,
-    nama VARCHAR(20) NOT NULL
+    nama VARCHAR(25) NOT NULL
 );
 
 INSERT INTO dosen VALUES(
@@ -18,7 +18,7 @@ INSERT INTO dosen VALUES(
 
 CREATE TABLE matakuliah(
     kodematkul VARCHAR(20) PRIMARY KEY,
-    nama VARCHAR(20) NOT NULL,
+    nama VARCHAR(25) NOT NULL,
     sks INT NOT NULL
 );
 
@@ -28,7 +28,7 @@ INSERT INTO matakuliah VALUES(
 
 CREATE TABLE mahasiswa(
     nim VARCHAR(20) PRIMARY KEY,
-    nama VARCHAR(20) NOT NULL,
+    nama VARCHAR(25) NOT NULL,
     alamat TEXT NOT NULL,
     kodejur VARCHAR(20) NOT NULL,
     FOREIGN KEY(kodejur) REFERENCES jurusan(kodejur)
